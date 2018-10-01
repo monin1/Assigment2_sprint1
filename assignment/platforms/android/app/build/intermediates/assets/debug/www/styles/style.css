@@ -1,0 +1,514 @@
+.text{
+display:none;
+}
+
+.text1{
+display:none;
+}
+
+.text2{
+display:none;
+}
+
+.text3{
+display:none;
+}
+
+.mainfooter {
+  width: 100%;
+  float: left;
+  text-align:center;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 1% 0;
+}
+
+
+.Dumbbell,.Cable,.Long_Bar,.Machine{
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 85%;
+  padding: 10% 1%;
+  border: black 2px;
+  background-color: black;
+
+}
+
+
+
+/* body para
+---------------------------------------------*/
+.column {
+    float: left;
+    width: 45%;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.para {
+    box-sizing: border-box;
+    width:auto;
+}
+
+body{
+	background-color: skyblue;
+	text-align:center;
+}
+
+.wrap{
+	width:1000px;
+	margin:auto;
+	margin-top: 50px;
+}
+
+.card{
+
+	transition:0.4s;
+	width:43%;
+	height:112px;
+	background-color:white;
+	text-align:center;
+	font-size:16px;
+	font-family: sans-serif;
+	float:left;
+	margin:10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    left: 0;
+    overflow: hidden;
+	position: relative;
+}
+
+.cardAction{
+    background-color: skyblue;
+    background-size: cover;
+    border-radius: 80%;
+    height: 100px;
+    margin: 200px 10px 0px 0 ;
+    margin-top: 400px;
+    width: 500px;
+	position: relative;
+	text-align:center;
+}
+
+.card:hover {
+    height: 450px;
+    width: 50%;
+}
+
+h2 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0px 0px 0 130px;
+    position: absolute;
+    text-align: center;
+    width: 30%;
+	letter-spacing: 0.5px;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.0005s ease-out;
+	border: 2px solid #3487f7;
+	background-color: white;
+}
+
+.card:hover .cardAction {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -5px;
+	position: absolute;
+}
+
+.card:hover h2{
+    background: white;
+    color: Black;
+    margin-top: 200px;
+    padding: 150px;
+}
+
+.card:hover h1{
+    background: skyblue;
+    color: Black;
+    margin-top:0px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        background-color:skyblue;
+		font  : 21px sans-serif;
+    }
+	.wrap{
+		width:100%;
+		margin:auto;
+		margin-top: 50px;
+	}
+
+.card{
+	transition:0.4s;
+	width:100%;
+	background-color:white;
+	text-align:center;
+	font-size:16px;
+	font-family: sans-serif;
+	float:left;
+	margin:10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    left: 0;
+    overflow: hidden;
+
+	margin-bottom: 20px;
+}
+
+.cardAction{
+    background-color: skyblue;
+    background-size: cover;
+    width: 100%;
+	text-align:center;
+}
+
+.card:hover {
+    height: 550px;
+    width: 100%;
+}
+
+.card:hover .cardAction {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: 20px;
+
+}
+
+h2 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin: 0px 0px 0 130px;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+	letter-spacing: 0.5px;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.0005s ease-out;
+	border: 2px solid #3487f7;
+	background-color: white;
+   }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color:skyblue;
+		font  : 21px sans-serif;
+    }
+	.wrap{
+		width:100%;
+		margin:auto;
+		margin-top: 50px;
+	}
+
+.card{
+	transition:0.4s;
+	width:100%;
+	background-color:white;
+	text-align:center;
+	font-size:16px;
+	font-family: sans-serif;
+	float:left;
+	margin:10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    left: 0;
+    overflow: hidden;
+	position: relative;
+}
+
+.cardAction{
+    background-color: skyblue;
+    background-size: cover;
+    border-radius: 80%;
+    height: 100px;
+    margin: 200px 10px 0px 0 ;
+    margin-top: 400px;
+    width: 100%;
+	position: relative;
+	text-align:center;
+}
+
+.card:hover {
+    height: 550px;
+    width: 100%;
+}
+
+
+
+.card:hover .cardAction {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: 80px;
+}
+
+.card:hover h2{
+    background: white;
+    color: Black;
+    margin-top: 250px;
+    padding: 5px;
+}
+
+.card:hover h1{
+    background: skyblue;
+    color: Black;
+    margin-top:0px;
+    padding: 5px;
+}
+
+}
+
+
+
+
+/* update
+
+---------------------------------------------*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 3px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+  /* login */
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+  }
+
+  button:hover {
+      opacity: 1;
+  }
+
+  /* Extra styles for the cancel button */
+  .cancelbtn1 {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+  }
+
+  /* Center the image and position the close button */
+  .imgcontainer1 {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+  }
+
+  img.avatar {
+      width: 40%;
+      border-radius: 50%;
+  }
+
+  .container1 {
+      padding: 16px;
+  }
+
+  span.psw {
+      float: right;
+      padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .modal1 {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal1-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close1 {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+  }
+
+  .close1:hover,
+  .close1:focus {
+      color: red;
+      cursor: pointer;
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)}
+      to {-webkit-transform: scale(1)}
+  }
+
+  @keyframes animatezoom {
+      from {transform: scale(0)}
+      to {transform: scale(1)}
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn1 {
+         width: 100%;
+      }
+  }
