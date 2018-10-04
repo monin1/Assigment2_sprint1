@@ -13,7 +13,7 @@
 
 	</head>
 
-	<body>
+	<body onload="init();">
 
 
 		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
@@ -113,6 +113,25 @@
 		</div>
 
 		</div>
+		<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+
+<div class="form-container">
+      <label for="msg"><b>Screen</b></label>
+     <video onclick="snapshot(this);" width=280 height=180 id="video" controls autoplay></video>
+     Screenshots :
+     <canvas  id="myCanvas" width="280" height="180"></canvas>
+
+<button type="submit" class="btn" onclick="startWebcam();">Start WebCam</button>
+    <button type="submit" class="btn" onclick="stopWebcam();">Stop WebCam</button>
+    <button type="submit" class="btn" onclick="snapshot();">Take Snapshot</button>
+
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</div>
+</div>
+
+      <script src="javascripts/click.js"></script>
 
 	<footer class="mainfooter">
 
